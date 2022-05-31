@@ -1630,7 +1630,7 @@ void TankHealthCheck()
 	}
 	else if (StrContains(difficulty, "normal", false) != -1)
 	{
-		zombieHP[6] = zombieHP[6];
+		zombieHP[6] = RoundToFloor(zombieHP[6] * 1.5);
 	}
 	else if (StrContains(difficulty, "hard", false) != -1 || StrContains(difficulty, "impossible", false) != -1)
 	{
